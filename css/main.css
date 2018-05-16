@@ -113,6 +113,29 @@ section {
             padding: 20px;
         }
 
+.footer-container {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    background-color: #cb4f44;
+    color: white;
+}
+
+    .footer-box1 {
+        flex: 1;
+    }
+
+    .footer-box2 {
+        flex: 1;
+    }
+
+    .footer-box3 {
+        flex: 1;
+    }
+
+#email-me:hover {
+    transform: scale(1.1);
+}
 
 @media only screen and (max-width: 740px) {
     .flex-container {
