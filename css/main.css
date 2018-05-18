@@ -4,37 +4,56 @@ body {
 
 
 .navbar-custom {
-    background-color: #f7f8fa;
+    position: absolute;
+    top: 0;
+    font-family: 'Open Sans';
 }
     .navbar-custom h1 {
         display: inline-block;
         border-bottom: 2px solid #cb4f44;
     }
-
-
-
     .navbar-custom span {
         font-weight: bold;
         color: #cb4f44;
+        font-weight: lighter;
     }
 
     .navbar-custom .navbar-brand {
-        color: #252525;
+        color: white;
+        border: 4px solid white;
     }
+        .navbar-custom .navbar-brand:hover {
+            background-color: #cb4f44;
+            color: white;
+        }
+
 .navbar-custom a {
     color: #252525;
 }
 
 section {
-    padding: 30vh 0;
+    padding: 20vh 0;
 }
 
 .one {
-    background-color: #252525;
+    /* background-color: #252525; */
+    padding: 35vh 0;
+    background-image: url(https://res.cloudinary.com/justenphelpscom/image/upload/c_scale,e_grayscale,w_4612/v1526671621/nathan-dumlao-485797-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
     position: relative;
-    margin-bottom: -5px;
-
+    box-shadow: 0px 20px 10px black;
 }
+    .one > h1 {
+        position: absolute;
+        bottom: 0px;
+        text-align: center;
+        width: 100%;
+        color: white;
+        text-transform: uppercase;
+        background: #252525;
+        letter-spacing: .5rem;
+    }
 
 .one-shape {
     height: 200px;
@@ -45,7 +64,7 @@ section {
     margin: 0 auto;
     display: grid;
     place-content: center;
-    box-shadow: 2px 4px 6px black;
+    box-shadow: 2px 4px 5px black;
     transition: top ease 0.5s;
     top: 0;
     position: relative;
@@ -55,7 +74,7 @@ section {
         top: -10px;
     }
 
-.one::before,
+/* .one::before,
 .one::after {
     position: absolute;
     background: #252525;
@@ -63,7 +82,6 @@ section {
     width: 150px;
     content: '';
     bottom: -1em;
-    z-index: 100;
 }
 
     .one::before {
@@ -74,18 +92,17 @@ section {
     .one::after {
         left: 50%;
         transform: skew(0, -20deg);
-    }
+    } */
 
 .two {
     background: #cb4f44;
     color: white;
     position: relative;
-    z-index: 10;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% calc(100% - 10vw), 0 100%);
     margin-bottom: -10vw;
     text-align: center;
+    padding: 30vh 0;
 }
-
 
 .three {
     background: #f7f8fa;
