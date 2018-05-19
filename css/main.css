@@ -4,18 +4,14 @@ body {
 
 
 .navbar-custom {
-    position: absolute;
-    top: 0;
     font-family: 'Open Sans';
     margin: 10px;
 }
     .navbar-custom h1 {
-        display: inline-block;
         border-bottom: 2px solid #cb4f44;
     }
     .navbar-custom span {
         color: #cb4f44;
-        font-weight: lighter;
     }
 
     .navbar-custom .navbar-brand {
@@ -25,7 +21,6 @@ body {
         .navbar-custom .navbar-brand:hover {
             background-color: #cb4f44;
             color: white;
-            border: 4px solid black;
         }
 
 .navbar-custom a {
@@ -37,19 +32,21 @@ section {
 }
 
 .one {
-    /* background-color: #252525; */
-    padding: 35vh 0;
-    background-image: url(https://res.cloudinary.com/justenphelpscom/image/upload/c_scale,e_grayscale,w_4612/v1526671621/nathan-dumlao-485797-unsplash.jpg);
+    padding: 50vh 0;
+    background-image: url(https://res.cloudinary.com/justenphelpscom/image/upload/e_grayscale,o_90/v1526671621/denys-nevozhai-541044-unsplash.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
     box-shadow: 0px 20px 10px black;
+    height: 80vh;
 }
-    .one > h1 {
+    #typed {
+        display: grid;
+        align-content: center;
         font-size: 2vw;
-        position: absolute;
+        /* position: absolute; */
         padding: 10px;
-        bottom: 0px;
+        /* bottom: 0px; */
         text-align: center;
         width: 100%;
         color: white;
@@ -57,46 +54,15 @@ section {
         background: #252525;
         letter-spacing: .5rem;
     }
-
-.one-shape {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    background-color: #cb4f44;
-    color: white;
-    margin: 0 auto;
-    display: grid;
-    place-content: center;
-    box-shadow: 2px 4px 5px black;
-    transition: top ease 0.5s;
-    top: 0;
-    position: relative;
-}
-
-    .one-shape:hover {
-        top: -10px;
-    }
-
-/* .one::before,
-.one::after {
-    position: absolute;
-    background: #252525;
-    height: 150px;
-    width: 150px;
-    content: '';
-    bottom: -1em;
-}
-
-    .one::before {
+    #down-arrow {
+        position: absolute;
+        bottom: 10px;
         right: 50%;
-        transform: skew(0, 20deg);
     }
-
-    .one::after {
-        left: 50%;
-        transform: skew(0, -20deg);
-    } */
-
+        #down-arrow:hover {
+            transform: scale(1.1);
+            opacity: 0.6;
+        }
 .two {
     background: #cb4f44;
     color: white;
@@ -132,11 +98,18 @@ section {
             padding: 20px;
         }
 
+
+
+.team-container {
+    margin: 40px;
+}
+
+
 .footer-container {
     display: flex;
     text-align: center;
     padding: 20px;
-    background-color: #cb4f44;
+    background-color: #252525;
     color: white;
 }
 
