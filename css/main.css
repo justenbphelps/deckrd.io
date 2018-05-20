@@ -62,9 +62,10 @@ section {
         letter-spacing: .5rem;
     }
     #down-arrow {
-        position: absolute;
-        bottom: 10px;
-        right: 50%;
+        display: grid;
+        align-content: center;
+        margin: 0 auto;
+        margin-top: 200px;
     }
         #down-arrow:hover {
             transform: scale(1.1);
