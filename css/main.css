@@ -7,6 +7,7 @@ body {
     font-family: 'Open Sans';
     margin: 10px;
     width: 100%;
+    color: white;
 }
     .navbar-custom .nav-logo {
         height: 40px;
@@ -14,6 +15,9 @@ body {
         position: absolute;
         right: 20px;
     }
+        .nav-link{
+            color: white!important;
+        }
     .navbar-custom h1 {
         border-bottom: 2px solid #cb4f44;
     }
@@ -24,13 +28,18 @@ body {
     .navbar-custom .navbar-brand {
         color: white;
         border: 4px solid white;
+        font-weight: bold;
     }
-        .navbar-custom .navbar-brand:hover {
-            background-color: #cb4f44;
-            color: white;
-        }
-    .navbar-light .navbar-nav .nav-link {
-        color: white;
+    .navbar-brand:hover {
+        color: white!important;
+    }
+     .hvr-sweep-to-right:before {
+         color: white;
+         background: #cb4f44;
+     }
+
+    .hvr-underline-from-center:before {
+        background: #f7f8fa;
     }
 section {
     padding: 20vh 0;
@@ -43,30 +52,27 @@ section {
     background-size: cover;
     position: relative;
     box-shadow: 0px 20px 10px black;
-    height: 80vh;
+    height: 70vh;
 }
     #typed {
+        position: relative;
         display: grid;
         align-content: center;
-        font-size: 2vw;
-        padding: 10px;
+        font-size: 1.5vw;
+        padding: 5px;
         text-align: center;
         width: 100%;
         color: #cb4f44;
         text-transform: uppercase;
-        background: rgba(10, 10, 10, 0.8);
-        opacity: 0.8;
-        letter-spacing: .5rem;
+        background: rgba(10, 10, 10, 0.9);
+        line-height: 1;
     }
-        #typed-red {
-            color: #cb4f44;
-        }
-
     #down-arrow {
-        display: grid;
-        align-content: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
         margin: 0 auto;
-        margin-top: 200px;
     }
         #down-arrow:hover {
             transform: scale(1.1);
@@ -79,40 +85,58 @@ section {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% calc(100% - 10vw), 0 100%);
     margin-bottom: -10vw;
     text-align: center;
-    padding: 30vh 0;
+    padding: 20vh 0;
 }
+    .text-container {
+        padding-bottom: 150px;
+        font-size: 1.2em;
+    }
+        .text-container p {
+            text-align: left;
+        }
+        .award-svg {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .hvr-bounce-in {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        .hvr-bounce-in:hover,
+        .hvr-bounce-in:focus,
+        .hvr-bounce-in:active {
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+            -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+            transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+        }
 
 .three {
     background: #f7f8fa;
-    text-align: center;
 }
+    .three h1 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+        .three  p {
+            padding: 20px;
+        }
 
-    .flex-container {
-        display: flex;
-        margin: 20px;
+    .web-box {
+        text-align: center;
+    }
+    .cpu-box {
+        text-align: center;
     }
 
-        .box1 {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .box2 {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .box3 {
-            flex: 1;
-            padding: 20px;
-        }
-
-
-
-.team-container {
-    margin: 40px;
-}
-
+    .custom-row {
+        margin: 20px;
+    }
 
 .footer-container {
     display: flex;
